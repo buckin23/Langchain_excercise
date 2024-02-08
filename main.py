@@ -14,9 +14,7 @@ if not query:
         return {"answer": "Please provide a query"}
     elif not file or not file.filename.endswith('.txt'):
         return {"answer": "Please upload a .txt file"}
-    elif api_key == "" or api_key == None:
-        return {"answer": "Please provide OPENAI API key"}
-    else:
+      else:
         file_contents = await file.read()
         try:
            return {"message": "/Bagath"}
