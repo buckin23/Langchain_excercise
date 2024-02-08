@@ -11,6 +11,6 @@ async def answer_query_from_user_provided_text_file (query: str = Query(..., tit
                 return {"answer": "Please upload a .txt file"}
         else:
                 file_contents = await file.read()
-        try:
-                   return {"message": "/Bagath"}
+                return {"message": "/Bagath"}
+      
         
